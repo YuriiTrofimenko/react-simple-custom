@@ -12,8 +12,8 @@ function App() {
           <Link to="/about">About</Link>
         </nav>
         <Switch>
-          <Route exact path="/" component={Home} />
-          <Route exact path="/about" component={About} />
+          <Route exact path="/" component={() => <Home message='Hello React Props - 2' />} />
+          <Route exact path="/about" component={() => <About messagePart1='Hello ' messagePart2='React Props!'/>} />
         </Switch>
       </Router>
     </>
